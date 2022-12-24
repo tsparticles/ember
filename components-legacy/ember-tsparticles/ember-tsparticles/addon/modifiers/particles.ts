@@ -1,85 +1,125 @@
 import Modifier from 'ember-modifier';
 import { tsParticles } from 'tsparticles-engine';
 
+import { registerDestructor } from '@ember/destroyable';
+
 export default class ParticlesnModifier extends Modifier {
   async modify(element: Element) {
     // const { tsParticles } = await import('tsparticles-engine');
     console.log(element.id);
-    tsParticles.load(element.id, {
-      fps_limit: 60,
+    const particlesCanvas = await tsParticles.load(element.id, {
+      particles: {
+        number: {
+          value: 52,
+          density: {
+            enable: true,
+            value_area: 631.3280775270874,
+          },
+        },
+        color: {
+          value: '#fff',
+        },
+        shape: {
+          type: 'circle',
+          stroke: {
+            width: 0,
+            color: '#000000',
+          },
+          polygon: {
+            nb_sides: 5,
+          },
+          image: {
+            src: 'img/github.svg',
+            width: 100,
+            height: 100,
+          },
+        },
+        opacity: {
+          value: 0.5,
+          random: true,
+          anim: {
+            enable: false,
+            speed: 1,
+            opacity_min: 0.1,
+            sync: false,
+          },
+        },
+        size: {
+          value: 5,
+          random: true,
+          anim: {
+            enable: false,
+            speed: 40,
+            size_min: 0.1,
+            sync: false,
+          },
+        },
+        line_linked: {
+          enable: false,
+          distance: 500,
+          color: '#ffffff',
+          opacity: 0.4,
+          width: 2,
+        },
+        move: {
+          enable: true,
+          speed: 1.5,
+          direction: 'bottom',
+          random: false,
+          straight: false,
+          out_mode: 'out',
+          bounce: false,
+          attract: {
+            enable: false,
+            rotateX: 600,
+            rotateY: 1200,
+          },
+        },
+      },
       interactivity: {
         detect_on: 'canvas',
         events: {
-          onclick: { enable: true, mode: 'push' },
           onhover: {
+            enable: false,
+            mode: 'bubble',
+          },
+          onclick: {
             enable: true,
-            mode: 'attract',
-            parallax: { enable: false, force: 60, smooth: 10 },
+            mode: 'repulse',
           },
           resize: true,
         },
         modes: {
-          push: { quantity: 4 },
-          attract: { distance: 200, duration: 0.4, factor: 5 },
-        },
-      },
-      particles: {
-        color: { value: '#ffffff' },
-        line_linked: {
-          color: '#ffffff',
-          distance: 150,
-          enable: true,
-          opacity: 0.4,
-          width: 1,
-        },
-        move: {
-          attract: { enable: false, rotateX: 600, rotateY: 1200 },
-          bounce: false,
-          direction: 'none',
-          enable: true,
-          out_mode: 'out',
-          random: false,
-          speed: 2,
-          straight: false,
-        },
-        number: { density: { enable: true, value_area: 800 }, value: 80 },
-        opacity: {
-          anim: { enable: false, opacity_min: 0.1, speed: 1, sync: false },
-          random: false,
-          value: 0.5,
-        },
-        shape: {
-          character: {
-            fill: false,
-            font: 'Verdana',
-            style: '',
-            value: '*',
-            weight: '400',
+          grab: {
+            distance: 400,
+            line_linked: {
+              opacity: 0.5,
+            },
           },
-          image: {
-            height: 100,
-            replace_color: true,
-            src: 'images/github.svg',
-            width: 100,
+          bubble: {
+            distance: 400,
+            size: 4,
+            duration: 0.3,
+            opacity: 1,
+            speed: 3,
           },
-          polygon: { nb_sides: 5 },
-          stroke: { color: '#000000', width: 0 },
-          type: 'circle',
+          repulse: {
+            distance: 200,
+            duration: 0.4,
+          },
+          push: {
+            particles_nb: 4,
+          },
+          remove: {
+            particles_nb: 2,
+          },
         },
-        size: {
-          anim: { enable: false, size_min: 0.1, speed: 40, sync: false },
-          random: true,
-          value: 5,
-        },
-      },
-      polygon: {
-        draw: { enable: false, lineColor: '#ffffff', lineWidth: 0.5 },
-        move: { radius: 10 },
-        scale: 1,
-        type: 'none',
-        url: '',
       },
       retina_detect: true,
+    });
+
+    registerDestructor(this, () => {
+      particlesCanvas?.destroy();
     });
   }
 }
