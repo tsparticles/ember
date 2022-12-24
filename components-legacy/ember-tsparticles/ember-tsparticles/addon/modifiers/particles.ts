@@ -1,8 +1,9 @@
 import Modifier from 'ember-modifier';
+import { tsParticles } from 'tsparticles-engine';
 
 export default class ParticlesnModifier extends Modifier {
   async modify(element: Element) {
-    const { tsParticles } = await import('tsparticles-engine');
+    // const { tsParticles } = await import('tsparticles-engine');
     console.log(element.id);
     tsParticles.load(element.id, {
       fps_limit: 60,
