@@ -30,7 +30,8 @@
   "dependencies": {
     "ember-cli-babel": "^7.26.11",
     "ember-cli-htmlbars": "^6.1.1",
-    "ember-cli-typescript": "^5.2.1"
+    "ember-cli-typescript": "^5.2.1",
+    "tsparticles-engine": "^2.7.0"
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
