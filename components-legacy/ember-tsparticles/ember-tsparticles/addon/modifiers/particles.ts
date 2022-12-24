@@ -3,7 +3,7 @@ import { tsParticles } from 'tsparticles-engine';
 
 import { registerDestructor } from '@ember/destroyable';
 
-export default class ParticlesnModifier extends Modifier {
+export default class ParticlesModifier extends Modifier {
   async modify(element: Element) {
     // const { tsParticles } = await import('tsparticles-engine');
     console.log(element.id);
