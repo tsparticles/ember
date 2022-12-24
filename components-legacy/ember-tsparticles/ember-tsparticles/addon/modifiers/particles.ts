@@ -1,7 +1,7 @@
 import Modifier from 'ember-modifier';
 
 export default class ParticlesnModifier extends Modifier {
-  async modify(element) {
+  async modify(element: Element) {
     const { tsParticles } = await import('tsparticles-engine');
     console.log(element.id);
     tsParticles.load(element.id, {
