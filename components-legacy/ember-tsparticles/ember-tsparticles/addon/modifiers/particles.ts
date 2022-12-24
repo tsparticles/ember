@@ -20,14 +20,12 @@ export default class ParticlesModifier extends Modifier<ParticlesModifierSignatu
   ) {
     // const { tsParticles } = await import('tsparticles-engine');
 
-    const particlesCanvas = await tsParticles.load(element.id, options);
-    tsParticles.setOnClickHandler(() => {
-      console.log('click');
-    });
-    console.log(options);
+    tsParticles.init();
+    let particlesCanvas = await tsParticles.load(element.id, options);
 
     registerDestructor(this, () => {
       particlesCanvas?.destroy();
+      particlesCanvas = undefined;
     });
   }
 }
