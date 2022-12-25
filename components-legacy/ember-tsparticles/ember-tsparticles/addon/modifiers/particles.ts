@@ -1,5 +1,6 @@
 import Modifier, { NamedArgs, PositionalArgs } from 'ember-modifier';
 import { Options, tsParticles } from 'tsparticles-engine';
+import { loadFull } from 'tsparticles';
 
 import { registerDestructor } from '@ember/destroyable';
 
@@ -20,7 +21,7 @@ export default class ParticlesModifier extends Modifier<ParticlesModifierSignatu
   ) {
     // const { tsParticles } = await import('tsparticles-engine');
 
-    tsParticles.init();
+    await loadFull(tsParticles);
     let particlesCanvas = await tsParticles.load(element.id, options);
 
     registerDestructor(this, () => {
