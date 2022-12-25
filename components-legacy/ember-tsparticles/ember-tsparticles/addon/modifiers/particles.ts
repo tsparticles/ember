@@ -19,8 +19,6 @@ export default class ParticlesModifier extends Modifier<ParticlesModifierSignatu
     _: PositionalArgs<ParticlesModifierSignature>,
     { options }: NamedArgs<ParticlesModifierSignature>
   ) {
-    // const { tsParticles } = await import('tsparticles-engine');
-
     await loadFull(tsParticles);
     let particlesContainer = await tsParticles.load(element.id, options);
 
