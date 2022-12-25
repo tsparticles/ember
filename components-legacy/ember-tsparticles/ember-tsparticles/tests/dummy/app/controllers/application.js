@@ -2,6 +2,9 @@ import Controller from '@ember/controller';
 
 export default class ApplicationController extends Controller {
   options = {
+    fullScreen: {
+      enable: false,
+    },
     autoPlay: true,
     fpsLimit: 60,
     particles: {
