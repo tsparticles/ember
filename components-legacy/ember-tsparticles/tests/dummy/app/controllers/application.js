@@ -5,8 +5,6 @@ export default class ApplicationController extends Controller {
     fullScreen: {
       enable: false,
     },
-    autoPlay: true,
-    fpsLimit: 60,
     particles: {
       color: {
         value: '#ffffff',
@@ -22,11 +20,7 @@ export default class ApplicationController extends Controller {
         enable: true,
       },
       move: {
-        // direction: MoveDirection.none,
         enable: true,
-        outModes: {
-          // default: OutMode.bounce,
-        },
         random: false,
         speed: 6,
         straight: false,
