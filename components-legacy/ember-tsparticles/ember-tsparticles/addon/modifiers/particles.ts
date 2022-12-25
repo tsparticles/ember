@@ -22,11 +22,11 @@ export default class ParticlesModifier extends Modifier<ParticlesModifierSignatu
     // const { tsParticles } = await import('tsparticles-engine');
 
     await loadFull(tsParticles);
-    let particlesCanvas = await tsParticles.load(element.id, options);
+    let particlesContainer = await tsParticles.load(element.id, options);
 
     registerDestructor(this, () => {
-      particlesCanvas?.destroy();
-      particlesCanvas = undefined;
+      particlesContainer?.destroy();
+      particlesContainer = undefined;
     });
   }
 }
