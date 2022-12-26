@@ -66,12 +66,16 @@ module('Integration | Component | particles', function (hooks) {
   });
 
   test('calls the loaded callback', async function (this: Context, assert) {
+    assert.expect(0);
+    const done = assert.async();
+
     this.options = LINK_OPTIONS;
     this.particlesInit = async (engine) => {
       await loadFull(engine);
     };
-    this.particlesLoaded = () => {};
-    const particlesLoadedSpy = sinon.spy(this, 'particlesLoaded');
+    this.particlesLoaded = () => {
+      done();
+    };
     await render(
       hbs`
       <Particles
@@ -80,22 +84,21 @@ module('Integration | Component | particles', function (hooks) {
         @particlesLoaded={{this.particlesLoaded}}
       />`
     );
-
-    assert.true(
-      particlesLoadedSpy.calledOnce,
-      'the loaded callback has been called'
-    );
   });
 
   test('can load presets', async function (this: Context, assert) {
+    assert.expect(0);
+    const done = assert.async();
+
     this.options = {
       preset: 'snow',
     };
     this.particlesInit = async (engine) => {
       await loadSnowPreset(engine);
     };
-    this.particlesLoaded = () => {};
-    const particlesLoadedSpy = sinon.spy(this, 'particlesLoaded');
+    this.particlesLoaded = () => {
+      done();
+    };
     await render(
       hbs`
       <Particles
@@ -103,11 +106,6 @@ module('Integration | Component | particles', function (hooks) {
         @particlesInit={{this.particlesInit}}
         @particlesLoaded={{this.particlesLoaded}}
       />`
-    );
-
-    assert.true(
-      particlesLoadedSpy.calledOnce,
-      'the loaded callback has been called'
     );
   });
 });
