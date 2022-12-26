@@ -36,6 +36,7 @@
     "ember-cli-htmlbars": "^6.1.1",
     "ember-cli-typescript": "^5.2.1",
     "ember-modifier": "^4.0.0",
+    "ember-test-selectors": "^6.0.0",
     "tsparticles-engine": "^2.7.1"
   },
   "devDependencies": {
