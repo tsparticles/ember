@@ -1,5 +1,6 @@
 import Modifier, { NamedArgs, PositionalArgs } from 'ember-modifier';
-import { Container, Engine, Options, tsParticles } from 'tsparticles-engine';
+import type { Container, Engine, Options } from 'tsparticles-engine';
+import { tsParticles } from 'tsparticles-engine';
 
 import { registerDestructor } from '@ember/destroyable';
 
