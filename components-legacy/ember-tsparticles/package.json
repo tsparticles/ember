@@ -1,13 +1,16 @@
 {
   "name": "ember-tsparticles",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Ember.js component for using tsParticles",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IgnaceMaes/ember-tsparticles.git"
+  },
   "license": "MIT",
-  "author": "",
+  "author": "Ignace Maes (https://ignacemaes.com/)",
   "directories": {
     "doc": "doc",
     "test": "tests"
