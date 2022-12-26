@@ -14,6 +14,12 @@ const SELECTORS = {
 module('Integration | Component | particles', function (hooks) {
   setupRenderingTest(hooks);
 
+  test('generates a unique id', async function (this: Context, assert) {
+    await render(hbs`<Particles />`);
+
+    assert.dom(SELECTORS.PARTICLES).hasAttribute('id');
+  });
+
   test('can be assigned a custom id', async function (this: Context, assert) {
     this.id = 'custom-id';
     await render(hbs`<Particles id={{this.id}}/>`);
