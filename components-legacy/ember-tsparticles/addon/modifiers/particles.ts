@@ -25,6 +25,10 @@ export default class ParticlesModifier extends Modifier<ParticlesModifierSignatu
       particlesLoaded,
     }: NamedArgs<ParticlesModifierSignature>
   ) {
+    if (!element.id) {
+      throw new Error('The specified element must have an id attribute.');
+    }
+
     await loadFull(tsParticles);
 
     if (particlesInit) {
