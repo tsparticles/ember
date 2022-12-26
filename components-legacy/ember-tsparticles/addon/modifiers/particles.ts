@@ -1,5 +1,5 @@
 import Modifier, { NamedArgs, PositionalArgs } from 'ember-modifier';
-import { Engine, Options, tsParticles } from 'tsparticles-engine';
+import { Container, Engine, Options, tsParticles } from 'tsparticles-engine';
 import { loadFull } from 'tsparticles';
 
 import { registerDestructor } from '@ember/destroyable';
@@ -10,6 +10,7 @@ interface ParticlesModifierSignature {
     Named: {
       options: Options;
       particlesInit: (engine: Engine) => void;
+      particlesLoaded: (container: Container) => void;
     };
   };
 }
@@ -18,7 +19,11 @@ export default class ParticlesModifier extends Modifier<ParticlesModifierSignatu
   async modify(
     element: Element,
     _: PositionalArgs<ParticlesModifierSignature>,
-    { options, particlesInit }: NamedArgs<ParticlesModifierSignature>
+    {
+      options,
+      particlesInit,
+      particlesLoaded,
+    }: NamedArgs<ParticlesModifierSignature>
   ) {
     await loadFull(tsParticles);
 
@@ -26,11 +31,15 @@ export default class ParticlesModifier extends Modifier<ParticlesModifierSignatu
       await particlesInit(tsParticles);
     }
 
-    let particlesContainer = await tsParticles.load(element.id, options);
+    let container = await tsParticles.load(element.id, options);
+
+    if (particlesLoaded && container) {
+      particlesLoaded(container);
+    }
 
     registerDestructor(this, () => {
-      particlesContainer?.destroy();
-      particlesContainer = undefined;
+      container?.destroy();
+      container = undefined;
     });
   }
 }

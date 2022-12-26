@@ -174,7 +174,14 @@ export default class ApplicationController extends Controller {
   //   ],
   // };
 
-  async loadConfetti(engine: Engine): Promise<void> {
+  async loadConfetti(engine: Engine) {
     await loadConfettiPreset(engine);
+  }
+
+  loadedCallback(engine: Engine) {
+    console.log(
+      'A callback function can be passed which triggers when the particles are loaded',
+      engine
+    );
   }
 }

@@ -2,6 +2,6 @@
 
 <h2 id='title'>ember-tsparticles</h2>
 
-<Particles class='fixed-size-particles' @options={{this.options}} />
+<Particles class='fixed-size-particles' @options={{this.options}} @particlesLoaded={{this.loadedCallback}} />
 
 <Particles @options={{this.confetti}} @particlesInit={{this.loadConfetti}} />
