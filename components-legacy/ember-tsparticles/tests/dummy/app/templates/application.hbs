@@ -9,11 +9,7 @@
     (fn (mut this.isConfettiVisible) (if this.isConfettiVisible false true))
   }}
 >
-  {{#if this.isConfettiVisible}}
-    Hide confetti
-  {{else}}
-    Show confetti
-  {{/if}}
+  {{if this.isConfettiVisible 'Hide' 'Show'}} confetti
 </button>
 
 <Particles
