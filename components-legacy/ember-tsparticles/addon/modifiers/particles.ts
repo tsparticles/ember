@@ -1,5 +1,4 @@
 import Modifier, { NamedArgs, PositionalArgs } from 'ember-modifier';
-import { loadFull } from 'tsparticles';
 import { Container, Engine, Options, tsParticles } from 'tsparticles-engine';
 
 import { registerDestructor } from '@ember/destroyable';
@@ -31,7 +30,7 @@ export default class ParticlesModifier extends Modifier<ParticlesModifierSignatu
       throw new Error('The specified element must have an id attribute.');
     }
 
-    await loadFull(tsParticles);
+    tsParticles.init();
 
     if (particlesInit) {
       await particlesInit(tsParticles);

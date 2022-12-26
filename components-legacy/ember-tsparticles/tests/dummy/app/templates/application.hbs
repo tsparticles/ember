@@ -19,6 +19,7 @@
 <Particles
   class='fixed-size-particles'
   @options={{this.options}}
+  @particlesInit={{this.loadFullOptions}}
   @particlesLoaded={{this.loadedCallback}}
 />
 
@@ -29,5 +30,8 @@
 />
 
 {{#if this.isConfettiVisible}}
-  <Particles @options={{this.confetti}} />
+  <Particles
+    @options={{this.confetti}}
+    @particlesInit={{this.loadFullOptions}}
+  />
 {{/if}}
