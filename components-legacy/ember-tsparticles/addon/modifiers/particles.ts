@@ -1,6 +1,6 @@
 import Modifier, { NamedArgs, PositionalArgs } from 'ember-modifier';
-import { Container, Engine, Options, tsParticles } from 'tsparticles-engine';
 import { loadFull } from 'tsparticles';
+import { Container, Engine, Options, tsParticles } from 'tsparticles-engine';
 
 import { registerDestructor } from '@ember/destroyable';
 
@@ -9,6 +9,7 @@ interface ParticlesModifierSignature {
     Positional: [];
     Named: {
       options: Options;
+      url: string;
       particlesInit: (engine: Engine) => void;
       particlesLoaded: (container: Container) => void;
     };
@@ -21,6 +22,7 @@ export default class ParticlesModifier extends Modifier<ParticlesModifierSignatu
     _: PositionalArgs<ParticlesModifierSignature>,
     {
       options,
+      url,
       particlesInit,
       particlesLoaded,
     }: NamedArgs<ParticlesModifierSignature>
@@ -35,7 +37,9 @@ export default class ParticlesModifier extends Modifier<ParticlesModifierSignatu
       await particlesInit(tsParticles);
     }
 
-    let container = await tsParticles.load(element.id, options);
+    let container = await (url
+      ? tsParticles.loadJSON(element.id, url)
+      : tsParticles.load(element.id, options ?? {}));
 
     if (particlesLoaded && container) {
       particlesLoaded(container);
