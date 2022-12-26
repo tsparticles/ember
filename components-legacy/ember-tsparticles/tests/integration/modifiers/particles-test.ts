@@ -8,7 +8,7 @@ module('Integration | Modifier | particles', function (hooks) {
 
   // Replace this with your real tests.
   test('it renders', async function (assert) {
-    await render(hbs`<div {{particles}}></div>`);
+    await render(hbs`<div id='test' {{particles}}></div>`);
 
     assert.ok(true);
   });
