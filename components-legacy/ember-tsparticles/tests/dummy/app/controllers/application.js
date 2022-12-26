@@ -22,7 +22,7 @@ export default class ApplicationController extends Controller {
       move: {
         enable: true,
         random: false,
-        speed: 6,
+        speed: 2,
         straight: false,
       },
       number: {
