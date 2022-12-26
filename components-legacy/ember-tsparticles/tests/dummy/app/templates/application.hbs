@@ -1,9 +1,7 @@
-{{page-title "ember-tsparticles"}}
+{{page-title 'ember-tsparticles'}}
 
-<h2 id="title">ember-tsparticles</h2>
+<h2 id='title'>ember-tsparticles</h2>
 
-<div id="particles" {{particles options=this.options}}/>
+<Particles id='particles' @options={{this.options}} />
 
-<div id="particles-2" {{particles options=this.confetti}}/>
-
-{{outlet}}
+<Particles id='particles-2' @options={{this.confetti}} />
