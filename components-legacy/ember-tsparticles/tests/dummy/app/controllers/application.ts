@@ -57,7 +57,7 @@ export default class ApplicationController extends Controller {
     },
     emitters: {
       life: {
-        count: 1,
+        count: 0,
         duration: 3,
       },
       position: {
