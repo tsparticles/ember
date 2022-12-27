@@ -59,7 +59,7 @@ export default class ExampleComponent extends Component {
     },
   };
 
-  async particlesInit() {
+  async particlesInit(engine) {
     await loadFull(engine);
   }
 }
