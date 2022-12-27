@@ -25,7 +25,45 @@ ember install ember-tsparticles
 
 ## Usage
 
-[Longer description of how to use the addon in apps.]
+For the most basic usage of the component you can pass a configuration object via the `options` argument and initialize the tsparticles features you need in the `particlesInit` callback.
+
+By default `tsparticles` doesn't load any extensions required to render the particles. Extensions can be loaded on a granular level which has a benefit that only the required ones have to be loaded, but to start out it can be useful to load all options via the `loadFull` function of `tsparticles`.
+
+```bash
+ember install tsparticles
+```
+
+```hbs
+<Particles
+  @options={{this.options}}
+  @particlesInit={{this.particlesInit}}
+/>
+```
+```js
+import { Component } from '@glimmer/component';
+import { loadFull } from 'tsparticles';
+
+export default class ExampleComponent extends Component {
+  options = {
+    particles: {
+      color: {
+        value: "#000",
+      },
+      links: {
+        enable: true,
+        color: "#000",
+      },
+      move: {
+        enable: true,
+      },
+    },
+  };
+
+  async particlesInit() {
+    await loadFull(engine);
+  }
+}
+```
 
 
 ## Contributing
