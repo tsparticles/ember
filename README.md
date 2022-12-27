@@ -71,6 +71,41 @@ export default class ExampleComponent extends Component {
 
 ![ExampleComponent](/images/minimal.png)
 
+### With template import syntax
+
+ When using [ember-template-imports](https://github.com/ember-template-imports/ember-template-imports) the example above would look like this, using the `.gjs` file extension.
+
+ ```js
+ import Component from '@glimmer/component';
+ import { loadFull } from 'tsparticles';
+ import Particles from '@tsparticles/ember/components/particles';
+ export default class ExampleComponent extends Component {
+   options = {
+     particles: {
+       color: {
+         value: '#000',
+       },
+       links: {
+         enable: true,
+         color: '#000',
+       },
+       move: {
+         enable: true,
+       },
+     },
+   };
+   async particlesInit(engine) {
+     await loadFull(engine);
+   }
+   <template>
+     <Particles
+       @options={{this.options}}
+       @particlesInit={{this.particlesInit}}
+     />
+   </template>
+ }
+ ```
+
 ### Using presets
 
 Presets are offered by `tsparticles` which allow to use premade configuration objects. Refer to the [presets](https://github.com/matteobruni/tsparticles#Presets) section in the `tsparticles` repository to view all existing presets.

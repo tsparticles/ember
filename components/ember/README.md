@@ -1,6 +1,6 @@
 [![banner](https://particles.js.org/images/banner3.png)](https://particles.js.org)
 
-# ember-tsparticles
+# @tsparticles/ember
 
 An Ember.js component for using [tsParticles](https://github.com/matteobruni/tsparticles). Easily create highly customizable JavaScript particles effects, confetti explosions and fireworks animations and use them as animated backgrounds for your website.
 
@@ -15,13 +15,13 @@ An Ember.js component for using [tsParticles](https://github.com/matteobruni/tsp
 ## Installation
 
 ```bash
-npm install ember-tsparticles
+npm install @tsparticles/ember
 # or
-yarn add ember-tsparticles
+yarn add @tsparticles/ember
 # or
-pnpm install ember-tsparticles
+pnpm install @tsparticles/ember
 # or
-ember install ember-tsparticles
+ember install @tsparticles/ember
 ```
 
 
@@ -70,6 +70,41 @@ export default class ExampleComponent extends Component {
 ```
 
 ![ExampleComponent](/images/minimal.png)
+
+### With template import syntax
+
+ When using [ember-template-imports](https://github.com/ember-template-imports/ember-template-imports) the example above would look like this, using the `.gjs` file extension.
+
+ ```js
+ import Component from '@glimmer/component';
+ import { loadFull } from 'tsparticles';
+ import Particles from '@tsparticles/ember/components/particles';
+ export default class ExampleComponent extends Component {
+   options = {
+     particles: {
+       color: {
+         value: '#000',
+       },
+       links: {
+         enable: true,
+         color: '#000',
+       },
+       move: {
+         enable: true,
+       },
+     },
+   };
+   async particlesInit(engine) {
+     await loadFull(engine);
+   }
+   <template>
+     <Particles
+       @options={{this.options}}
+       @particlesInit={{this.particlesInit}}
+     />
+   </template>
+ }
+ ```
 
 ### Using presets
 
