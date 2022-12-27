@@ -30,7 +30,7 @@ For the most basic usage of the component you can pass a configuration object vi
 By default `tsparticles` doesn't load any extensions required to render the particles. Extensions can be loaded on a granular level which has a benefit that only the required ones have to be loaded, but to start out it can be useful to load all options via the `loadFull` function of `tsparticles`.
 
 ```bash
-ember install tsparticles
+npm install tsparticles
 ```
 
 ```hbs
@@ -65,6 +65,30 @@ export default class ExampleComponent extends Component {
 }
 ```
 
+### Using presets
+
+Presets are offered by `tsparticles` which allow to use premade configuration objects. Refer to the [presets](https://github.com/matteobruni/tsparticles#Presets) section in the `tsparticles` repository to view all existing presets.
+
+```bash
+npm install tsparticles-preset-confetti
+```
+
+```hbs
+<Particles
+  @options={{hash preset='confetti'}}
+  @particlesInit={{this.loadPreset}}
+/>
+```
+```js
+import { Component } from '@glimmer/component';
+import { loadConfettiPreset } from "tsparticles-preset-confetti";
+
+export default class ExampleComponent extends Component {
+  async loadPreset(engine) {
+    await loadConfettiPreset(engine);
+  }
+}
+```
 
 ## Contributing
 
