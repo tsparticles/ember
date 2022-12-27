@@ -12,7 +12,13 @@
 
 ## Installation
 
-```
+```bash
+npm install ember-tsparticles
+# or
+yarn add ember-tsparticles
+# or
+pnpm install ember-tsparticles
+# or
 ember install ember-tsparticles
 ```
 
