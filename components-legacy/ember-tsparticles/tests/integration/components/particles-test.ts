@@ -11,6 +11,7 @@ import { loadSnowPreset } from 'tsparticles-preset-snow';
 
 interface Context extends TestContext {
   id: string;
+  url: string;
   options: Object;
   particlesInit: (engine: Engine) => void;
   particlesLoaded: (container: Container) => void;
@@ -43,12 +44,20 @@ module('Integration | Component | particles', function (hooks) {
   test('calls load when passing a config object', async function (this: Context, assert) {
     const loadSpy = sinon.spy(tsParticles, 'load');
     this.options = LINK_OPTIONS;
-    this.particlesInit = () => {};
-    await render(
-      hbs`<Particles @options={{this.options}} @particlesInit={{this.particlesInit}}/>`
-    );
+    await render(hbs`<Particles @options={{this.options}}/>`);
 
     assert.true(loadSpy.calledOnce, 'tsparticles engine load has been called');
+  });
+
+  test('calls loadJSON when passing an url', async function (this: Context, assert) {
+    const loadJSONSpy = sinon.stub(tsParticles, 'loadJSON');
+    this.url = 'https://example.com/config.json';
+    await render(hbs`<Particles @url={{this.url}}/>`);
+
+    assert.true(
+      loadJSONSpy.calledOnce,
+      'tsparticles engine load has been called'
+    );
   });
 
   test('calls the init callback', async function (this: Context, assert) {
