@@ -49,11 +49,11 @@ export default class ExampleComponent extends Component {
   options = {
     particles: {
       color: {
-        value: "#000",
+        value: '#000',
       },
       links: {
         enable: true,
-        color: "#000",
+        color: '#000',
       },
       move: {
         enable: true,
@@ -85,7 +85,7 @@ npm install tsparticles-preset-confetti
 ```
 ```js
 import { Component } from '@glimmer/component';
-import { loadConfettiPreset } from "tsparticles-preset-confetti";
+import { loadConfettiPreset } from 'tsparticles-preset-confetti';
 
 export default class ConfettiComponent extends Component {
   async loadPreset(engine) {
