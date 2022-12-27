@@ -1,6 +1,6 @@
 # ember-tsparticles
 
-[Short description of the addon.]
+An Ember.js component for using [tsParticles](https://github.com/matteobruni/tsparticles). Easily create highly customizable JavaScript particles effects, confetti explosions and fireworks animations and use them as animated backgrounds for your website.
 
 
 ## Compatibility
