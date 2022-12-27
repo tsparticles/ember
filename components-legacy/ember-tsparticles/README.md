@@ -67,6 +67,8 @@ export default class ExampleComponent extends Component {
 }
 ```
 
+![ExampleComponent](/images/minimal.png)
+
 ### Using presets
 
 Presets are offered by `tsparticles` which allow to use premade configuration objects. Refer to the [presets](https://github.com/matteobruni/tsparticles#Presets) section in the `tsparticles` repository to view all existing presets.
@@ -85,12 +87,14 @@ npm install tsparticles-preset-confetti
 import { Component } from '@glimmer/component';
 import { loadConfettiPreset } from "tsparticles-preset-confetti";
 
-export default class ExampleComponent extends Component {
+export default class ConfettiComponent extends Component {
   async loadPreset(engine) {
     await loadConfettiPreset(engine);
   }
 }
 ```
+
+![ConfettiComponent](/images/confetti.png)
 
 ### Loading options from an URL
 
