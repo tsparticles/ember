@@ -39,4 +39,6 @@
 /package-lock.json.ember-try
 /yarn.lock.ember-try
 
+# Custom
 .DS_store
+/images/
