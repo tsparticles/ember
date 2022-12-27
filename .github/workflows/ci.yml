@@ -49,7 +49,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
       - name: Install Dependencies
-        run: pnpm install --frozen-lockfile --non-interactive
+        run: pnpm install --frozen-lockfile
       - name: Lint
         run: lerna run lint
       - name: Run Tests
@@ -92,7 +92,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
       - name: Install Dependencies
-        run: pnpm install --frozen-lockfile --non-interactive
+        run: pnpm install --frozen-lockfile
       - name: Run Tests
         run: lerna run test:ember
 
@@ -147,6 +147,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
       - name: Install Dependencies
-        run: pnpm install --frozen-lockfile --non-interactive
+        run: pnpm install --frozen-lockfile
       - name: Run Tests
         run: pnpx ember try:one ${{ matrix.try-scenario }}
