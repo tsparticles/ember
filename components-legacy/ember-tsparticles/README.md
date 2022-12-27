@@ -27,7 +27,9 @@ ember install ember-tsparticles
 
 For the most basic usage of the component you can pass a configuration object via the `options` argument and initialize the tsparticles features you need in the `particlesInit` callback.
 
-By default `tsparticles` doesn't load any extensions required to render the particles. Extensions can be loaded on a granular level which has a benefit that only the required ones have to be loaded, but to start out it can be useful to load all options via the `loadFull` function of `tsparticles`.
+By default `tsparticles` doesn't load any extensions required to render particles. Extensions can be loaded on a granular level which has the benefit that only what is required is loaded, but to start out it can be useful to load all options via the `loadFull` function of `tsparticles`.
+
+For the configuration object API documentation, see the [tsparticles repository](https://github.com/matteobruni/tsparticles).
 
 ```bash
 npm install tsparticles
@@ -107,6 +109,35 @@ import { loadFull } from 'tsparticles';
 export default class ExampleComponent extends Component {
   async particlesInit(engine) {
     await loadFull(engine);
+  }
+}
+```
+
+### Particles loaded callback
+
+Further customization to the `tsparticles` container can be done by using the `particlesLoaded` callback argument. This callback passes the container instance for that particular component.
+
+```hbs
+<Particles
+  @url={{'http://foo.bar/particles.json'}}
+  @particlesInit={{this.particlesInit}}
+  @particlesLoaded={{this.loadedCallback}}
+/>
+```
+```js
+import { Component } from '@glimmer/component';
+import { loadFull } from 'tsparticles';
+
+export default class ExampleComponent extends Component {
+  async particlesInit(engine) {
+    await loadFull(engine);
+  }
+
+  loadedCallback(container) {
+    console.log(
+      'A callback function can be passed which triggers when the particles are loaded',
+      container
+    );
   }
 }
 ```

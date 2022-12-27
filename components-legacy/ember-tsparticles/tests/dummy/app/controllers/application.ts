@@ -1,5 +1,5 @@
 import Controller from '@ember/controller';
-import { Engine } from 'tsparticles-engine';
+import { Container, Engine } from 'tsparticles-engine';
 import { loadSnowPreset } from 'tsparticles-preset-snow';
 import { tracked } from '@glimmer/tracking';
 import { CONFETTI_OPTIONS, LINK_OPTIONS } from '../utils/options';
@@ -20,10 +20,10 @@ export default class ApplicationController extends Controller {
     await loadSnowPreset(engine);
   }
 
-  loadedCallback(engine: Engine) {
+  loadedCallback(container: Container) {
     console.log(
       'A callback function can be passed which triggers when the particles are loaded',
-      engine
+      container
     );
   }
 }
