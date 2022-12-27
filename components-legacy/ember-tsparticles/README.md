@@ -90,6 +90,27 @@ export default class ExampleComponent extends Component {
 }
 ```
 
+### Loading options from an URL
+
+Options can also be passed via link with the `url` argument. These will be fetched once the component renders.
+
+```hbs
+<Particles
+  @url={{'http://foo.bar/particles.json'}}
+  @particlesInit={{this.particlesInit}}
+/>
+```
+```js
+import { Component } from '@glimmer/component';
+import { loadFull } from 'tsparticles';
+
+export default class ExampleComponent extends Component {
+  async particlesInit(engine) {
+    await loadFull(engine);
+  }
+}
+```
+
 ## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
