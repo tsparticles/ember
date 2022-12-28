@@ -25,7 +25,7 @@
     "lint:js:fix": "eslint . --fix",
     "start": "ember serve",
     "test": "npm-run-all --print-name \"lint\" \"test:*\"",
-    "test:ember": "ember test --port=7356",
+    "test:ember": "ember test --test-port=7356",
     "test:ember-compatibility": "echo ember try:each",
     "prepack": "ember ts:precompile",
     "postpack": "ember ts:clean"
