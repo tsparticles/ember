@@ -1,1 +1,1 @@
-export { default } from 'ember-tsparticles/helpers/unique-id-polyfill';
+export { default } from '@tsparticles/ember/helpers/unique-id-polyfill';

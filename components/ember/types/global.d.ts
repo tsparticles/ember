@@ -1,5 +1,5 @@
 // Types for compiled templates
-declare module 'ember-tsparticles/templates/*' {
+declare module '@tsparticles/ember/templates/*' {
   import { TemplateFactory } from 'ember-cli-htmlbars';
 
   const tmpl: TemplateFactory;
