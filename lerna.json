@@ -3,7 +3,6 @@
   "packages": [
     "apps/*",
     "components/*",
-    "components-legacy/*"
   ],
   "useWorkspaces": true,
   "version": "2.7.1",
