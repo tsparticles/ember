@@ -8,7 +8,7 @@
 
 ## Packages
 
-* `components/ember` for `@tsparticles/ember`
+* `components/ember` for `ember-tsparticles`
 * `components-legacy/ember` for `tsparticles-ember`
 
 ## Linting (Run in a project folder)

@@ -1,1 +1,1 @@
-export { default } from '@tsparticles/ember/components/particles';
+export { default } from 'ember-tsparticles/components/particles';

@@ -14,16 +14,16 @@
         "tests/dummy/app/*",
         "app/*"
       ],
-      "@tsparticles/ember": [
+      "ember-tsparticles": [
         "addon"
       ],
-      "@tsparticles/ember/*": [
+      "ember-tsparticles/*": [
         "addon/*"
       ],
-      "@tsparticles/ember/test-support": [
+      "ember-tsparticles/test-support": [
         "addon-test-support"
       ],
-      "@tsparticles/ember/test-support/*": [
+      "ember-tsparticles/test-support/*": [
         "addon-test-support/*"
       ],
       "*": [

@@ -1,6 +1,6 @@
 [![banner](https://particles.js.org/images/banner3.png)](https://particles.js.org)
 
-# @tsparticles/ember
+# ember-tsparticles
 
 An Ember.js component for using [tsParticles](https://github.com/matteobruni/tsparticles). Easily create highly customizable JavaScript particles effects, confetti explosions and fireworks animations and use them as animated backgrounds for your website.
 
@@ -15,13 +15,13 @@ An Ember.js component for using [tsParticles](https://github.com/matteobruni/tsp
 ## Installation
 
 ```bash
-npm install @tsparticles/ember
+npm install ember-tsparticles
 # or
-yarn add @tsparticles/ember
+yarn add ember-tsparticles
 # or
-pnpm install @tsparticles/ember
+pnpm install ember-tsparticles
 # or
-ember install @tsparticles/ember
+ember install ember-tsparticles
 ```
 
 
@@ -77,7 +77,7 @@ export default class ExampleComponent extends Component {
 
  ```js
  import { loadFull } from 'tsparticles';
- import Particles from '@tsparticles/ember/components/particles';
+ import Particles from 'ember-tsparticles/components/particles';
  
  const options = {
    particles: {

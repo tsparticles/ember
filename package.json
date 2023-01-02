@@ -1,5 +1,5 @@
 {
-  "name": "@tsparticles/ember-workspace",
+  "name": "ember-tsparticles-workspace",
   "version": "0.0.0",
   "private": true,
   "scripts": {
