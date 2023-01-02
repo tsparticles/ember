@@ -150,5 +150,3 @@ jobs:
         run: pnpm install --frozen-lockfile
       - name: Run Tests Components
         run: components/ember/node_modules/.bin/ember try:one ${{ matrix.try-scenario }}
-      - name: Run Tests Components
-        run: components-legacy/ember/node_modules/.bin/ember try:one ${{ matrix.try-scenario }}
