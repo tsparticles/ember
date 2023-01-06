@@ -63,7 +63,7 @@ importers:
       ember-modifier: ^4.0.0
       ember-page-title: ^7.0.0
       ember-qunit: ^6.0.0
-      ember-resolver: ^8.0.3
+      ember-resolver: ^9.0.0
       ember-sinon-qunit: ^6.0.0
       ember-source: ~4.8.0
       ember-source-channel-url: ^3.0.0
@@ -104,7 +104,7 @@ importers:
       '@tsconfig/ember': 2.0.0
       '@types/ember': 4.0.3_@babel+core@7.20.7
       '@types/ember-qunit': 6.1.1_p7smap34oecdyzepobqdbugnwi
-      '@types/ember-resolver': 9.0.0_@babel+core@7.20.7
+      '@types/ember-resolver': 9.0.0_ember-source@4.8.4
       '@types/ember__application': 4.0.5_@babel+core@7.20.7
       '@types/ember__array': 4.0.3_@babel+core@7.20.7
       '@types/ember__component': 4.0.11_@babel+core@7.20.7
@@ -137,7 +137,7 @@ importers:
       ember-load-initializers: 2.1.2_@babel+core@7.20.7
       ember-page-title: 7.0.0
       ember-qunit: 6.1.1_p7smap34oecdyzepobqdbugnwi
-      ember-resolver: 8.1.0_@babel+core@7.20.7
+      ember-resolver: 9.0.1_ember-source@4.8.4
       ember-sinon-qunit: 6.0.0
       ember-source: 4.8.4_snhoo3gx32ihaa355dgagkj6ga
       ember-source-channel-url: 3.0.0
@@ -3011,13 +3011,13 @@ packages:
       - webpack
     dev: true
 
-  /@types/ember-resolver/9.0.0_@babel+core@7.20.7:
+  /@types/ember-resolver/9.0.0_ember-source@4.8.4:
     resolution: {integrity: sha512-lEuC2QD8K6rRAbELMejrALFBgelRPt6OQtapny4Oke07ZtK/Lbf9zn5KIDl7PNkirxMD0AStsQTdUqFu6eVbVw==}
     deprecated: This is a stub types definition. ember-resolver provides its own type definitions, so you do not need this installed.
     dependencies:
-      ember-resolver: 8.1.0_@babel+core@7.20.7
+      ember-resolver: 9.0.1_ember-source@4.8.4
     transitivePeerDependencies:
-      - '@babel/core'
+      - ember-source
       - supports-color
     dev: true
 
@@ -6465,18 +6465,18 @@ packages:
       - webpack
     dev: true
 
-  /ember-resolver/8.1.0_@babel+core@7.20.7:
-    resolution: {integrity: sha512-MGD7X2ztZVswGqs1mLgzhZJRhG7XiF6Mg4DgC7xJFWRYQQUHyGJpGdNWY9nXyrYnRIsCrQoL1do41zpxbrB/cg==}
-    engines: {node: '>= 10.*'}
+  /ember-resolver/9.0.1_ember-source@4.8.4:
+    resolution: {integrity: sha512-vFdaxDuwp0xptxa4uhJE8mNLQf6/8Mz+mBohsF4721hz03ieW+zdSSR04fCetFVCLxtNhGmmrIZrClDcA5dB9w==}
+    engines: {node: 14.* || 16.* || >= 18}
+    peerDependencies:
+      ember-source: ^4.8.3
+    peerDependenciesMeta:
+      ember-source:
+        optional: true
     dependencies:
-      babel-plugin-debug-macros: 0.3.4_@babel+core@7.20.7
-      broccoli-funnel: 3.0.8
-      broccoli-merge-trees: 4.2.0
       ember-cli-babel: 7.26.11
-      ember-cli-version-checker: 5.1.2
-      resolve: 1.22.1
+      ember-source: 4.8.4_snhoo3gx32ihaa355dgagkj6ga
     transitivePeerDependencies:
-      - '@babel/core'
       - supports-color
     dev: true
 
