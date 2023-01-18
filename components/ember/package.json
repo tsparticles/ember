@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/ember",
-  "version": "2.7.1",
+  "version": "2.8.0",
   "description": "Official tsParticles Ember Component - Easily create highly customizable particle, confetti and fireworks animations and use them as animated backgrounds for your website. Ready to use components available also for Web Components, React, Vue.js (2.x and 3.x), Svelte, jQuery, Preact, Angular, Riot.js, Solid.js, Inferno.",
   "keywords": [
     "front-end",
@@ -92,7 +92,7 @@
     "ember-cli-typescript": "^5.2.1",
     "ember-modifier": "^4.0.0",
     "ember-test-selectors": "^6.0.0",
-    "tsparticles-engine": "^2.7.1"
+    "tsparticles-engine": "^2.8.0"
   },
   "devDependencies": {
     "@babel/core": "7.20.7",
@@ -151,11 +151,11 @@
     "eslint-plugin-qunit": "^7.3.1",
     "loader.js": "^4.7.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.7.1",
+    "prettier": "^2.8.3",
     "qunit": "^2.19.2",
     "qunit-dom": "^2.0.0",
-    "tsparticles": "^2.7.1",
-    "tsparticles-preset-snow": "^2.7.1",
+    "tsparticles": "^2.8.0",
+    "tsparticles-preset-snow": "^2.8.0",
     "typescript": "^4.9.4",
     "webpack": "^5.74.0"
   },
