@@ -1,6 +1,6 @@
 import Modifier, { NamedArgs, PositionalArgs } from 'ember-modifier';
-import type { Container, Engine, Options } from 'tsparticles-engine';
-import { tsParticles } from 'tsparticles-engine';
+import type { Container, Engine, Options } from '@tsparticles/engine';
+import { tsParticles } from '@tsparticles/engine';
 
 import { registerDestructor } from '@ember/destroyable';
 
@@ -10,8 +10,8 @@ interface ParticlesModifierSignature {
     Named: {
       options: Options;
       url: string;
-      particlesInit: (engine: Engine) => void;
-      particlesLoaded: (container: Container) => void;
+      particlesInit: (engine: Engine) => Promise<void>;
+      particlesLoaded: (container: Container) => Promise<void>;
     };
   };
 }
@@ -31,18 +31,18 @@ export default class ParticlesModifier extends Modifier<ParticlesModifierSignatu
       throw new Error('The specified element must have an id attribute.');
     }
 
-    tsParticles.init();
-
     if (particlesInit) {
       await particlesInit(tsParticles);
     }
 
-    let container = await (url
-      ? tsParticles.loadJSON(element.id, url)
-      : tsParticles.load(element.id, options ?? {}));
+    let container = await tsParticles.load({
+      id: element.id,
+      url,
+      options: options ?? {},
+    });
 
     if (particlesLoaded && container) {
-      particlesLoaded(container);
+      await particlesLoaded(container);
     }
 
     registerDestructor(this, () => {
