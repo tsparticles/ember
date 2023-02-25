@@ -1,13 +1,14 @@
 {
   "name": "ember-tsparticles",
-  "version": "2.9.1",
+  "version": "2.9.3",
   "description": "Ember.js component for using tsParticles",
   "keywords": [
     "ember-addon"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/IgnaceMaes/ember-tsparticles.git"
+    "url": "https://github.com/tsparticles/ember.git",
+    "directory": "components/ember"
   },
   "license": "MIT",
   "author": "Ignace Maes (https://ignacemaes.com/)",
