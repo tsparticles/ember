@@ -155,7 +155,7 @@
     "qunit": "^2.19.2",
     "qunit-dom": "^2.0.0",
     "tsparticles": "^3.0.0-alpha.1",
-    "tsparticles-preset-snow": "^2.8.0",
+    "tsparticles-preset-stars": "^2.8.0",
     "typescript": "^4.9.4",
     "webpack": "^5.74.0"
   },

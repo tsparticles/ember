@@ -7,7 +7,7 @@ import sinon from 'sinon';
 import { loadFull } from 'tsparticles';
 
 import { Container, Engine, tsParticles } from '@tsparticles/engine';
-//import { loadSnowPreset } from 'tsparticles-preset-snow';
+//import { loadStarsPreset } from 'tsparticles-preset-stars';
 
 interface Context extends TestContext {
   id: string;

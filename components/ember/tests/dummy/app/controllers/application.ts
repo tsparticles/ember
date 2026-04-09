@@ -1,6 +1,6 @@
 import Controller from '@ember/controller';
 import { Container, Engine } from '@tsparticles/engine';
-import { loadSnowPreset } from 'tsparticles-preset-snow';
+import { loadStarsPreset } from 'tsparticles-preset-stars';
 import { tracked } from '@glimmer/tracking';
 import { CONFETTI_OPTIONS, LINK_OPTIONS } from '../utils/options';
 import { loadFull } from 'tsparticles';
@@ -16,8 +16,8 @@ export default class ApplicationController extends Controller {
     await loadFull(engine);
   }
 
-  async loadSnowPreset(/*engine: Engine*/) {
-    //await loadSnowPreset(engine);
+  async loadStarsPreset(/*engine: Engine*/) {
+    //await loadStarsPreset(engine);
   }
 
   loadedCallback(container: Container) {
