@@ -1,0 +1,354 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.8.4",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "CONTRIBUTING.md",
+        "hash": "14425662335115998576"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "14361870659202179179"
+      },
+      {
+        "file": "nx.json",
+        "hash": "93868292560654171"
+      },
+      {
+        "file": ".husky/.gitignore",
+        "hash": "4575667007673887251"
+      },
+      {
+        "file": ".github/workflows/ci.yml",
+        "hash": "221855758413091773"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "11374241937184452710"
+      },
+      {
+        "file": "package.json",
+        "hash": "13704125647263972425"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "17525722451698031761"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "15319470660879498360"
+      },
+      {
+        "file": "renovate.json",
+        "hash": "15495251679673267221"
+      },
+      {
+        "file": "README.md",
+        "hash": "12095902268416087502"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "4847204773326325000"
+      },
+      {
+        "file": ".husky/commit-msg",
+        "hash": "13890091524433070441"
+      },
+      {
+        "file": ".github/workflows/nodejs.yml",
+        "hash": "12275014048709713604"
+      }
+    ],
+    "projectFileMap": {
+      "@tsparticles/ember": [
+        {
+          "file": "components/ember/.editorconfig",
+          "hash": "15218977469843846918"
+        },
+        {
+          "file": "components/ember/.ember-cli",
+          "hash": "2738429961782955970"
+        },
+        {
+          "file": "components/ember/.eslintignore",
+          "hash": "3688632789751651290"
+        },
+        {
+          "file": "components/ember/.eslintrc.js",
+          "hash": "10027736246248453166"
+        },
+        {
+          "file": "components/ember/.gitignore",
+          "hash": "1832355669320759061"
+        },
+        {
+          "file": "components/ember/.npmignore",
+          "hash": "1720722432684081403"
+        },
+        {
+          "file": "components/ember/.prettierignore",
+          "hash": "5892631805559087453"
+        },
+        {
+          "file": "components/ember/.prettierrc.js",
+          "hash": "3824346088871718041"
+        },
+        {
+          "file": "components/ember/.template-lintrc.js",
+          "hash": "4483862113734391385"
+        },
+        {
+          "file": "components/ember/.watchmanconfig",
+          "hash": "7690554972260305765"
+        },
+        {
+          "file": "components/ember/LICENSE.md",
+          "hash": "14361870659202179179"
+        },
+        {
+          "file": "components/ember/README.md",
+          "hash": "12628526040333692000"
+        },
+        {
+          "file": "components/ember/addon/components/particles.hbs",
+          "hash": "5454414973237703443"
+        },
+        {
+          "file": "components/ember/addon/helpers/unique-id-polyfill.ts",
+          "hash": "12122858964753485784"
+        },
+        {
+          "file": "components/ember/addon/modifiers/particles.ts",
+          "hash": "13165668347915493266"
+        },
+        {
+          "file": "components/ember/app/components/particles.js",
+          "hash": "10482963690449157681"
+        },
+        {
+          "file": "components/ember/app/helpers/unique-id-polyfill.js",
+          "hash": "1998634927840141118"
+        },
+        {
+          "file": "components/ember/app/modifiers/particles.js",
+          "hash": "221996279023153454"
+        },
+        {
+          "file": "components/ember/config/ember-try.js",
+          "hash": "9321009542956591344"
+        },
+        {
+          "file": "components/ember/config/environment.js",
+          "hash": "17276054842690510275"
+        },
+        {
+          "file": "components/ember/ember-cli-build.js",
+          "hash": "6197247178902469115"
+        },
+        {
+          "file": "components/ember/images/confetti.png",
+          "hash": "5903709074335011852"
+        },
+        {
+          "file": "components/ember/images/minimal.png",
+          "hash": "3769156317594077927"
+        },
+        {
+          "file": "components/ember/index.js",
+          "hash": "9834088317911337828"
+        },
+        {
+          "file": "components/ember/package.json",
+          "hash": "16075964607915253753",
+          "deps": [
+            "npm:@babel/core",
+            "npm:@ember/optional-features",
+            "npm:@ember/test-helpers",
+            "npm:@embroider/test-setup",
+            "npm:@glimmer/component@2.1.1",
+            "npm:@glimmer/tracking",
+            "npm:@tsconfig/ember",
+            "npm:@types/ember",
+            "npm:@types/ember-qunit",
+            "npm:@types/ember-resolver",
+            "npm:@types/ember__application",
+            "npm:@types/ember__array",
+            "npm:@types/ember__component",
+            "npm:@types/ember__controller",
+            "npm:@types/ember__debug",
+            "npm:@types/ember__destroyable",
+            "npm:@types/ember__engine",
+            "npm:@types/ember__error",
+            "npm:@types/ember__object",
+            "npm:@types/ember__polyfills",
+            "npm:@types/ember__routing",
+            "npm:@types/ember__runloop",
+            "npm:@types/ember__service",
+            "npm:@types/ember__string",
+            "npm:@types/ember__template",
+            "npm:@types/ember__test",
+            "npm:@types/ember__test-helpers",
+            "npm:@types/ember__utils",
+            "npm:@types/qunit",
+            "npm:@types/rsvp",
+            "npm:@types/sinon@21.0.1",
+            "npm:babel-eslint",
+            "npm:broccoli-asset-rev",
+            "npm:ember-cli",
+            "npm:ember-cli-dependency-checker",
+            "npm:ember-cli-inject-live-reload",
+            "npm:ember-cli-sri",
+            "npm:ember-cli-terser",
+            "npm:ember-disable-prototype-extensions",
+            "npm:ember-load-initializers",
+            "npm:ember-page-title",
+            "npm:ember-qunit",
+            "npm:ember-resolver",
+            "npm:ember-sinon-qunit",
+            "npm:ember-source",
+            "npm:ember-source-channel-url",
+            "npm:ember-template-lint",
+            "npm:ember-try",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-ember",
+            "npm:eslint-plugin-node",
+            "npm:eslint-plugin-prettier",
+            "npm:eslint-plugin-qunit",
+            "npm:loader.js",
+            "npm:npm-run-all",
+            "npm:prettier@3.8.1",
+            "npm:qunit",
+            "npm:qunit-dom",
+            "npm:tsparticles",
+            "npm:tsparticles-preset-stars",
+            "npm:typescript@6.0.2",
+            "npm:webpack",
+            "npm:@tsparticles/engine",
+            "npm:ember-auto-import",
+            "npm:ember-cli-babel@8.3.1",
+            "npm:ember-cli-htmlbars",
+            "npm:ember-cli-typescript@5.3.0",
+            "npm:ember-modifier",
+            "npm:ember-test-selectors"
+          ]
+        },
+        {
+          "file": "components/ember/testem.js",
+          "hash": "4894365790559328248"
+        },
+        {
+          "file": "components/ember/tests/dummy/app/app.ts",
+          "hash": "18285240438015197688"
+        },
+        {
+          "file": "components/ember/tests/dummy/app/components/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "components/ember/tests/dummy/app/config/environment.d.ts",
+          "hash": "14671716594482532558"
+        },
+        {
+          "file": "components/ember/tests/dummy/app/controllers/application.ts",
+          "hash": "1263298344522333401"
+        },
+        {
+          "file": "components/ember/tests/dummy/app/helpers/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "components/ember/tests/dummy/app/index.html",
+          "hash": "11080005676973690116"
+        },
+        {
+          "file": "components/ember/tests/dummy/app/models/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "components/ember/tests/dummy/app/router.ts",
+          "hash": "7965815197993190545"
+        },
+        {
+          "file": "components/ember/tests/dummy/app/routes/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "components/ember/tests/dummy/app/styles/app.css",
+          "hash": "11692997983333643458"
+        },
+        {
+          "file": "components/ember/tests/dummy/app/templates/application.hbs",
+          "hash": "9766329866336103415"
+        },
+        {
+          "file": "components/ember/tests/dummy/app/utils/options.ts",
+          "hash": "10222676557848992005"
+        },
+        {
+          "file": "components/ember/tests/dummy/config/ember-cli-update.json",
+          "hash": "16045272084603717008"
+        },
+        {
+          "file": "components/ember/tests/dummy/config/environment.js",
+          "hash": "4839633717627728535"
+        },
+        {
+          "file": "components/ember/tests/dummy/config/optional-features.json",
+          "hash": "18428703390130428497"
+        },
+        {
+          "file": "components/ember/tests/dummy/config/targets.js",
+          "hash": "6763388846384395805"
+        },
+        {
+          "file": "components/ember/tests/dummy/public/robots.txt",
+          "hash": "17936424678600568019"
+        },
+        {
+          "file": "components/ember/tests/helpers/index.js",
+          "hash": "9423494703690977292"
+        },
+        {
+          "file": "components/ember/tests/helpers/particles.ts",
+          "hash": "3982726249578962973"
+        },
+        {
+          "file": "components/ember/tests/index.html",
+          "hash": "1622950430645037252"
+        },
+        {
+          "file": "components/ember/tests/integration/components/particles-test.ts",
+          "hash": "2869241272808163655"
+        },
+        {
+          "file": "components/ember/tests/test-helper.ts",
+          "hash": "4098578074156710650"
+        },
+        {
+          "file": "components/ember/tests/unit/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "components/ember/tsconfig.json",
+          "hash": "8896961525999573356"
+        },
+        {
+          "file": "components/ember/types/dummy/index.d.ts",
+          "hash": "15036214574332298676"
+        },
+        {
+          "file": "components/ember/types/global.d.ts",
+          "hash": "12915704644658221622"
+        },
+        {
+          "file": "components/ember/vendor/.gitkeep",
+          "hash": "3244421341483603138"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,700 @@
+{
+  "components/ember": {
+    "root": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:front-end": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:frontend": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:tsparticles": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles.js": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particlesjs": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particle": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:canvas": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:jsparticles": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:xparticles": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles-js": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles-bg": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles-bg-vue": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles-ts": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particles.ts": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:react-particles-js": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:react-particles.js": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:react-particles": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:react": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:reactjs": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:vue-particles": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:ngx-particles": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:angular-particles": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:particleground": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:vue": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:vuejs": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:preact": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:preactjs": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:jquery": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:angularjs": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:angular": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:typescript": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:javascript": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:animation": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:web": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:html5": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:web-design": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:webdesign": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:css": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:html": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:css3": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:animated": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:background": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:confetti": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:fireworks": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:fireworks-js": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:confetti-js": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:confettijs": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:fireworksjs": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:canvas-confetti": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:ember-addon": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.6": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.7": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.8": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.9": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.10": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.11": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.12": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.description": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageExports": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.script": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.scriptContent": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.runCommand": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.executor": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.options.script": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.scriptContent": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint.metadata.runCommand": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.executor": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.options": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.options.script": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata.scriptContent": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:fix.metadata.runCommand": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:hbs": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:hbs.executor": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:hbs.options": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:hbs.metadata": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:hbs.options.script": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:hbs.metadata.scriptContent": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:hbs.metadata.runCommand": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:hbs:fix": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:hbs:fix.executor": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:hbs:fix.options": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:hbs:fix.metadata": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:hbs:fix.options.script": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:hbs:fix.metadata.scriptContent": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:hbs:fix.metadata.runCommand": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:js": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:js.executor": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:js.options": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:js.metadata": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:js.options.script": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:js.metadata.scriptContent": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:js.metadata.runCommand": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:js:fix": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:js:fix.executor": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:js:fix.options": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:js:fix.metadata": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:js:fix.options.script": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:js:fix.metadata.scriptContent": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.lint:js:fix.metadata.runCommand": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.executor": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.options.script": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.scriptContent": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.start.metadata.runCommand": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ember": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ember.executor": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ember.options": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ember.metadata": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ember.options.script": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ember.metadata.scriptContent": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ember.metadata.runCommand": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ember-compatibility": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ember-compatibility.executor": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ember-compatibility.options": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ember-compatibility.metadata": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ember-compatibility.options.script": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ember-compatibility.metadata.scriptContent": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test:ember-compatibility.metadata.runCommand": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.executor": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.options": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.metadata": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.options.script": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.metadata.scriptContent": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.prepack.metadata.runCommand": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.postpack": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.postpack.executor": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.postpack.options": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.postpack.metadata": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.postpack.options.script": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.postpack.metadata.scriptContent": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.postpack.metadata.runCommand": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "components/ember/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  }
+}
