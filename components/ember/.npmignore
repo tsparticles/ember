@@ -12,7 +12,7 @@
 /.env*
 /.eslintcache
 /.eslintignore
-/.eslintrc.js
+/eslint.config.js
 /.git/
 /.github/
 /.gitignore
